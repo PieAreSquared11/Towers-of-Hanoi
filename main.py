@@ -20,9 +20,9 @@ while num_disks < 3:
 for i in range(num_disks):
   left_stack.push(num_disks - i)
 
-num_optical_moves = 2 * num_disks - 1
+num_optimal_moves = 2 * num_disks - 1
 
-print("\nThe fastest you can solve this game is in " + str(num_optical_moves) + " moves.")
+print("\nThe fastest you can solve this game is in " + str(num_optimal_moves) + " moves.")
 
 def get_input():
   choices = [stack.get_name() for stack in stacks]
@@ -63,4 +63,6 @@ while right_stack.get_size() != num_disks:
     else:
       print("\n\nInvalid Move. Try Again")
 
-print("\n\nYou completed the game in " + str(num_user_moves) + " moves, and the optimal number of moves is " + str(num_optimal_moves))
+print("\n\nYou completed the game in " + str(num_user_moves) + " moves, and the optimal number of moves is " + str(num_optimal_moves) + ". Great Job!")
+
+input("Press enter to close window . . . ")
